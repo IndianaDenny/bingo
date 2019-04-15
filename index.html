@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html>
+
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+
+<title>Bingo</title>
+
+<link rel="icon" href="fav.ico" type="image/x-icon">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="js/super_random_lexicon.js"></script>
+
+<link rel="stylesheet" href="css/style.css"> 
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+
+<body onload="new_bingo_game()"> 
+
+
+<!-- 
+    //  
+   //  container div
+  //
+ -->
+
+<div class="header">
+
+  <img src="img/logo.png" class="logo">
+
+  <a href="pdf/bingo.pdf" download="bingo.pdf" >
+
+  Download Bingo Cards
+
+  </a> 
+
+</div>
+
+
+      <div class="container">       
+                    
+
+
+                      <a onclick="reload() ">
+
+                        <div id="btn" class='top-nav-btn '>New Game
+
+                        </div> 
+
+                      </a>                 
+
+
+                        <a onclick="play_bingo()">
+
+                        <div id="play_bingo" class='top-nav-btn '>Draw
+
+                        </div> 
+
+                      </a> 
+
+
+                  
+
+</div>
+
+  
+<!-- ============================================= -->
+
+<div class="grid-container">
+      <div class="grid-item"><h2 class="bingo B">B<h2></div>
+      <div class="grid-item"><h2 class="bingo I">I<h2></div>
+      <div class="grid-item"><h2 class="bingo N">N<h2></div>
+      <div class="grid-item"><h2 class="bingo G">G<h2></div>
+      <div class="grid-item"><h2 class="bingo O">O<h2></div>
+
+      <div id="R1C1" class="grid-item">R1C1</div>
+      <div id="R1C2" class="grid-item">R1C2</div>
+      <div id="R1C3" class="grid-item">R1C3</div>  
+      <div id="R1C4" class="grid-item">R1C4</div>
+      <div id="R1C5" class="grid-item">R1C5</div>
+
+      <div id="R2C1" class="grid-item">R2C1</div>
+      <div id="R2C2" class="grid-item">R2C2</div>
+      <div id="R2C3" class="grid-item">R2C3</div>  
+      <div id="R2C4" class="grid-item">R2C4</div>
+      <div id="R2C5" class="grid-item">R2C5</div>
+
+      <div id="R3C1" class="grid-item">R3C1</div>
+      <div id="R3C2" class="grid-item">R3C2</div>
+      <div id="R3C3" class="grid-item">R3C3</div>  
+      <div id="R3C4" class="grid-item">R3C4</div>
+      <div id="R3C5" class="grid-item">R3C5</div>
+
+      <div id="R4C1" class="grid-item">R4C1</div>
+      <div id="R4C2" class="grid-item">R4C2</div>
+      <div id="R4C3" class="grid-item">R4C3</div>  
+      <div id="R4C4" class="grid-item">R4C4</div>
+      <div id="R4C5" class="grid-item">R4C5</div>
+
+      <div id="R5C1" class="grid-item">R5C1</div>
+      <div id="R5C2" class="grid-item">R5C2</div>
+      <div id="R5C3" class="grid-item">R5C3</div>  
+      <div id="R5C4" class="grid-item">R5C4</div>
+      <div id="R5C5" class="grid-item">R5C5</div>
+</div>
+
+
+<audio id="myAudio">
+    <source src="mp3/f-bingo.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+
+
+<div class="footer">
+  <p>Footer</p>
+</div>
+
+ 
+
+
+<script src="js/modal.js"></script>
+<script src="js/main.js"></script>
+
+
+</body>
+
+</html>
