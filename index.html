@@ -1,27 +1,14 @@
+
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "https://www.w3.org/TR/html4/loose.dtd">
 
 <html lang='en'>
 
+
 <head>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-138727607-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-138727607-1');
-</script>
-
-
-  
-<!--=
-     // 
-    //  
-     =-->
-
-<title>Bingo - Vbingo</title>
+<!-- meta tags here -->
+<title>Bingo</title>
 
 <meta content="width=device-width, initial-scale=1" name="viewport" />
 
@@ -31,7 +18,7 @@
 
     <meta name="keywords" content="bingo, bingo cards, play online, download, Denny in Saigon, teacher Denny">
 
-    <meta name="author" content="Vdenny.com">
+    <meta name="author" content="Denny Wygant - Developer">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -39,68 +26,72 @@
 
     <meta name="msvalidate.01" content="1A19480791B82903A87126FF40CB35E6" />
 
-<!--=
-     // 
-    //  
-     =-->
 
-<link rel="icon" href="fav.ico" type="image/x-icon">
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-<script src="https://www.w3schools.com/lib/w3.js"></script>
+<!-- w3.js -->
+ <script src="https://www.w3schools.com/lib/w3.js"></script> 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-<script src="js/super_random_lexicon.js"></script>
+<!-- w3 css -->
+ <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
 
+<!-- dw fonts css -->
+<link rel="stylesheet" href="../dw/css/dw-fonts.css"> 
+
+
+<!-- main style sheet -->
 <link rel="stylesheet" href="css/style.css"> 
 
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
-
+<!-- fav icon -->
+<link rel="icon" href="fav.ico" type="image/x-icon">
 </head>
+
+
 
 <body onload="new_bingo_game()"> 
 
+<!-- --------------------------------- -->
+<div class="w3-panel w3-center">
 
-<!-- 
-    //  
-   //  container div
-  //
- -->
+    <h1>Bingo</h1>
 
-<div class="header">
+    <p><span class="text-monospace font-weight-bold">Draw</span> draws a new number.</p>
 
-    <a href="https://vdenny.com" target="new">  
-    <img src="img/logo.png" class="logo">
-    </a>
+    <p><span class="kbd">New Game</span> resets the board.</p>
+
+    <p>No Guarantees - No Warantees</p>
+
+    <p>Your reults may vary</p>
+
+    <a class="w3-btn w3-hover-green w3-border-bottom" href="pdf/bingo.pdf" download="bingo.pdf">download bingo cards here</a>
 
 </div>
-
 
       <div class="container">       
                     
 
 
-                      <a onclick="reload() ">
+            <a onclick="reload() ">
 
-                        <div id="btn" class='top-nav-btn '>New Game
+            <span id="btn" class='top-nav-btn '>New Game
 
-                        </div> 
+            </span> 
 
-                      </a>                 
-
-
-                        <a onclick="play_bingo()">
-
-                        <div id="play_bingo" class='top-nav-btn '>Draw
-
-                        </div> 
-
-                      </a> 
+            </a>     
 
 
-                  
+            <a onclick="play_bingo()">
+
+            <span id="play_bingo" class=' top-nav-btn '>Draw
+
+            </span> 
+
+            </a> 
+
+    
 
 </div>
 
@@ -153,51 +144,31 @@
 
 
 
-<div class="footer">
-  <span>
-   <a href="pdf/bingo.pdf" download="bingo.pdf" >
-    <h2>  Download Bingo Cards</h2>
-   </a> 
-  </span>
+<!-- the footer -->
 
-  <span>
+       <footer class="w3-black">
+        <li><a target="_blank" href='https://vdenny.com/web-developer/'>Web Developer</a></li>
 
-    <!--=
-     // 
-    //  
-     =-->
+        <li><a target="_blank" href='https://vdenny.com/super-search/'>Super Search</a></li>
 
-  <ul>
+        <li><a target="_blank" href='https://vdenny.com/tech/'>Tech Blog</a></li>  
 
-   <li>
+        <li><a target="_blank" href='https://vdenny.com/random-youtube/'>Random YouTube</a></li>
 
-    <a href="https://teacher-denny.netlify.com/" target="new">Teacher Denny</a>
+        <li><a target="_blank" href='https://vdenny.com/crayon-colors/'>Crayon Colors</a></li>
 
-    </li>
+        <li><a target="_blank" href='https://vdenny.com/random-kjv/'>Random KJV</a></li>
 
-  <li>
+        <li><a target="_blank" href='https://teacher-denny.netlify.com/'>Teacher Denny</a></li>
 
-    <a href="https://vdenny.com/home/" target="new">Vdenny.com</a>
+        <li><a target="_blank" href='https://vdenny.com/students/'>English Students</a></li>
+    </footer>
 
-  </li>
+<!-- end footer -->
 
-    <li>
 
-    <a href="https://saigon.vdenny.com/" target="new">Blog - Denny in Saigon </a>
 
-    </li>
-
-</ul>
-</div>
-<!--=
-     // 
-    //  
-     =-->
-  </span>
-</div>
-
- 
-<script src="js/modal.js"></script>
+<!-- main js -->
 <script src="js/main.js"></script>
 
 
